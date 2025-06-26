@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fb;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.profile-pic {
+  flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #e0e0e0;
+  margin-right: 32px;
+  background: #f0f0f0;
+}
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-info h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.header-info .location {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+.links a, .links span {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+main section {
+  margin-bottom: 32px;
+}
+main h2 {
+  font-size: 1.3rem;
+  color: #1976d2;
+  margin-bottom: 12px;
+  border-left: 4px solid #1976d2;
+  padding-left: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.projects .project, .experience .job {
+  margin-bottom: 18px;
+}
+.projects h3, .experience h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+.projects ul, .experience ul {
+  margin: 0 0 0 16px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 12px 2vw;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+} 
